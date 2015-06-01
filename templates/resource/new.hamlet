@@ -1,0 +1,5 @@
+<h1>Ajouter une nouvelle ressource
+
+<form method=post action=@{ResourceNewR} enctype=#{enctype}>
+    ^{formWidget}
+    <input type="submit" value="Créer une ressource">

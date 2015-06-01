@@ -1,0 +1,36 @@
+$newline never
+\<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>#{pageTitle pc}
+    <link rel="icon" href="@{FaviconR}" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    ^{pageHead pc}
+  <body>
+    $maybe _ <- userIdM
+        <nav class=admin>
+            <ul>
+                <li>
+                    <a href=@{HomeR}>
+                        Page d’accueil
+                <li>
+                    <a href=@{ArticleNewR}>
+                        Créer une page
+                <li>
+                    <a href=@{ResourceNewR}>
+                        Créer une ressource
+                <li>
+                    <a href=@{ResourceListR}>
+                        Liste des ressources
+                <li>
+                    <a href=@{AuthR LogoutR}>
+                        Déconnexion
+
+    ^{pageBody pc}
+    <footer>
+      #{appCopyright $ appSettings master}
+      \ <a href="mailto:#{appWebmastermail $ appSettings master}">
+        #{appWebmastername $ appSettings master}
+

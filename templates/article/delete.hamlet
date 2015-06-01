@@ -1,0 +1,8 @@
+$newline never
+<h1>#{title}
+
+<form method=post action=@{ArticleDeleteR articleId}>
+    <p>
+        Voulez-vous vraiment supprimer l’article intitulé
+        \ #{articleTitle article} ?
+    <input type="submit" value="Supprimer l’article">

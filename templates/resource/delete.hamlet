@@ -1,0 +1,8 @@
+$newline never
+<h1>#{title}
+
+<form method=post action=@{ResourceDeleteR resourceId}>
+    <p>
+        Voulez-vous vraiment supprimer la ressource
+        « #{resourceResname resource} » ?
+    <input type="submit" value="Supprimer la ressource">

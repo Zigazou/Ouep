@@ -1,0 +1,27 @@
+<h1>Liste des ressources
+$maybe _ <- userIdM
+  <p>
+    <a href=@{ResourceNewR}>Créer une nouvelle ressource
+
+<table>
+  <caption>Liste des ressources  
+  <tr>
+    <th>Ressource
+    <th>Type Mime
+    <th>Màj
+    $maybe _ <- userIdM
+      <th>Actions
+
+  $forall Entity resourceId resource <- resources
+    <tr>
+      <td>
+        <a href=@{ResourceViewR resourceId}>#{resourceResname resource}
+        <br>
+        #{resourceFilename resource}
+      <td>#{show $ resourceMimetype resource}
+      <td>#{show $ resourceLastUpdate resource}
+      $maybe _ <- userIdM
+        <td>
+          <a href=@{ResourceDeleteR resourceId}>supprimer<br>
+          <a href=@{ResourceEditR resourceId}>modifier<br>
+

@@ -1,0 +1,24 @@
+$newline never
+<h1>#{articleTitle article}
+
+#{articleBody article}
+
+$maybe parent <- parentM
+  $maybe parentId <- parentIdM
+    <nav .parent>
+      <a href=@{ArticleViewR parentId}>
+        Retourner à l’article #{articleTitle parent}
+  $nothing
+    <a href=@{HomeR}>
+      Retourner à l’accueil
+$nothing
+  <a href=@{HomeR}>
+    Retourner à l’accueil
+
+$if not (null children)
+  <nav .children>
+    <ul>
+      $forall Entity childId child <- children
+        <li>
+          <a href=@{ArticleViewR childId}>#{articleTitle child}
+

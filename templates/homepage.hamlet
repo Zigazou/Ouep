@@ -1,0 +1,47 @@
+$newline never
+<article>
+  <h1>Ouep.eu, le serveur de Zigazou
+
+  <p>Bienvenue sur ouep.eu, le serveur de Zigazou
+
+  <h2>Pourquoi des pages aussi basiques ?
+  <p>Ce serveur est volontairement minimaliste pour plusieurs raisons :
+  <ul>
+    <li>
+      <strong>une grande rapidité de chargement
+      \ : pas de gestion dynamique des pages, pas de JavaScript à
+      exécuter, un DOM ultra-léger…
+    <li>
+      <strong>un meilleur respect des normes d'acessibilité
+      \ : en n’utilisant que les éléments HTML de base, le site s'adaptera
+      à toutes les technologies utilisées pour améliorer l'accessibilité,
+    <li>
+      <strong>la plus grande portabilité
+      \ : que vous utilisiez un navigateur en mode texte, un navigateur
+      mobile ou un navigateur desktop, la navigation sur ce site sera
+      toujours simple.
+
+  <h2>Ma présence sur le web
+  <p>Voici des liens vers quelques-uns de mes sites :
+  <ul>
+    <li>
+      <a href="http://www.flickr.com/photos/zigazou76/">
+        Mes photos sur Flickr
+
+    <li>
+      <a href="http://zigazou.wordpress.com/">
+        Mon blog sur Wordpress
+
+    <li>
+      <a href="http://twitter.com/zigazou">
+        Mon compte Twitter
+
+<footer>
+  <nav>
+    <h1>Navigation
+    <ul>
+      $forall Entity articleId article <- articles
+        <li>
+          <a href="@{ArticleViewR articleId}">
+            #{articleTitle article}
+

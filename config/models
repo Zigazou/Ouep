@@ -1,0 +1,45 @@
+-- Users
+User
+    username    Text
+    password    Text
+    email       Text
+    description Text Maybe
+    active      Bool
+
+    UniqueUser  username
+    UniqueEmail email
+
+    deriving    Typeable
+
+-- Articles
+Article
+    artname     Text
+    title       Text
+    keywords    Text Maybe
+    description Text Maybe
+    body        Markdown
+    parent      ArticleId Maybe
+    user        UserId
+    lastUpdate  UTCTime
+    weight      Int
+    public      Bool
+
+    UniqueArt   artname
+
+    deriving    Typeable
+
+-- Resources are files stored in the database
+Resource
+    resname     Text
+    filename    FilePath
+    mimetype    ContentType
+    description Text
+    user        UserId
+    lastUpdate  UTCTime
+    weight      Int
+    public      Bool
+
+    UniqueRes   resname
+
+    deriving    Typeable
+

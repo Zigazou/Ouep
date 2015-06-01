@@ -1,0 +1,5 @@
+<h1>Modifier l’article
+
+<form method=post action=@{ArticleEditR articleId} enctype=#{enctype}>
+    ^{formWidget}
+    <input type="submit" value="Modifier l’article">

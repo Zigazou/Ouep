@@ -1,0 +1,5 @@
+<h1>Ajouter un nouvel article
+
+<form method=post action=@{ArticleNewR} enctype=#{enctype}>
+    ^{formWidget}
+    <input type="submit" value="Créer un article">

@@ -1,0 +1,129 @@
+body {
+    max-width:40em;
+    font-size:120%;
+    line-height:140%;
+    word-wrap:break-word;
+    text-rendering:optimizelegibility;
+    margin:0 auto;
+    padding:.7em
+}
+
+pre {
+    border:1pt solid #000;
+    line-height:120%;
+    padding:.5em
+}
+
+h1 {
+    clear: both;
+    font-size:200%;
+    background-color:#000;
+    line-height:130%;
+    color:#FFF;
+    padding:.2em
+}
+
+h2 {
+    border-bottom:4pt solid grey;
+    margin-top:2em;
+    line-height:130%
+}
+
+h3 {
+    border-bottom:2pt solid #D3D3D3;
+    margin-top:1.5em;
+    line-height:130%
+}
+
+img {
+    max-width:100%
+}
+
+kbd {
+    border:.8ex outset #D3D3D3;
+    border-radius:0 1ex;
+    line-height:240%;
+    padding:.1em .3em
+}
+
+/* Forms */
+div.required, div.optional {
+    margin-bottom: 1em;
+}
+
+div.required>label:first-child, div.optional>label:first-child {
+    display: block;
+}
+
+/* Navigation */
+nav {
+    border-top:20pt solid grey;
+    margin-top:4em
+}
+
+nav>h1 {
+    background-color:transparent;color:#000;padding:0
+}
+
+nav {
+    border-top: .1em solid #000;
+}
+
+/* Tables */
+table {
+    font-size: 90%;
+    border-collapse: collapse;
+}
+th {
+    text-align: left;
+}
+
+th, td {
+    padding-right: 1em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
+
+th:last-child, td:last-child {
+    padding-right: 0;
+}
+
+tr:nth-child(even) {
+    background-color: #fff;
+}
+
+tr:nth-child(odd) {
+    background-color: #F5F5F5;
+}
+
+caption {
+    background-color: #000;
+    color: #fff;
+    border-radius: .3em .3em 0 0;
+}
+
+/* Admin menu */
+nav.admin {
+    font-size: 90%;
+    border: none;
+    margin-top: 0;
+}
+
+nav.admin ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav.admin li {
+    width: 25%;
+    float: left;
+}
+
+nav.admin a {
+    display: block;
+    padding: 0.7em 0.5em;
+    color: white;
+    background-color: #777;
+    text-decoration: none;
+}

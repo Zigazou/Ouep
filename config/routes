@@ -1,0 +1,20 @@
+/static                         StaticR Static appStatic
+/auth                           AuthR   Auth   getAuth
+
+/favicon.ico                    FaviconR GET
+/robots.txt                     RobotsR GET
+
+/                               HomeR GET
+
+/new/page                       ArticleNewR GET POST
+/page/#ArticleId/edit           ArticleEditR GET POST
+/page/#ArticleId/delete         ArticleDeleteR GET POST
+/page/#ArticleId                ArticleViewR GET
+
+/new/resource                   ResourceNewR GET POST
+/res                            ResourceListR GET
+/res/#ResourceId/edit           ResourceEditR GET POST
+/res/#ResourceId/delete         ResourceDeleteR GET POST
+/res/#ResourceId                ResourceGetR GET
+/res/#ResourceId/view           ResourceViewR GET
+

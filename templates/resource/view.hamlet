@@ -1,0 +1,30 @@
+<h1>Ressource #{resourceResname resource}
+$if visible
+  <table>
+    <caption>Informations sur la ressource</caption>
+    <tr>
+      <th>Nom de la ressource
+      <td>#{resourceResname resource}
+    <tr>
+      <th>Nom du fichier
+      <td>#{resourceFilename resource}
+    <tr>
+      <th>Type Mime
+      <td>#{show $ resourceMimetype resource}
+    <tr>
+      <th>Description
+      <td>#{resourceDescription resource}
+    <tr>
+      <th>Dernière mise à jour
+      <td>#{show $ resourceLastUpdate resource}
+    <tr>
+      <th>Poids
+      <td>#{resourceWeight resource}
+    <tr>
+      <th>Public
+      <td>#{resourcePublic resource}
+
+$else
+  <p>
+    Cette resource n’est pas publique !
+

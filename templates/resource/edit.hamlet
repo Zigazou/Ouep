@@ -1,0 +1,5 @@
+<h1>Modifier la ressource
+
+<form method=post action=@{ResourceEditR resourceId} enctype=#{enctype}>
+    ^{formWidget}
+    <input type="submit" value="Modifier la ressource">
